@@ -29,7 +29,11 @@ const MainNav: React.FC<MainNavProps> = ({ data }) => {
   return (
     <div className='flex items-center order-1 md:order-none pl-3'>
       {/* Hamburger Menu */}
-      <div onClick={toggleMenu} className='md:hidden cursor-pointer z-50'>
+      <div
+        onClick={toggleMenu}
+        className={`md:hidden cursor-pointer z-50 ${
+          isOpen ? "rotate-90" : "rotate-0"
+        } transition-transform duration-300`}>
         {isOpen ? <X size={28} /> : <Menu size={28} />}
       </div>
       {/*  */}
