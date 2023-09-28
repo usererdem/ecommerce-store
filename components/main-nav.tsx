@@ -46,6 +46,7 @@ const MainNav: React.FC<MainNavProps> = ({ data }) => {
           <Link
             key={route.href}
             href={route.href}
+            onClick={toggleMenu}
             className={cn(
               "text-4xl pb-6 md:pb-0 md:text-sm md:font-medium transition-colors hover:text-black",
               route.active ? "text-black" : "text-neutral-500"
