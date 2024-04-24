@@ -6,7 +6,7 @@ import Container from "@/components/ui/container";
 import MainNav from "@/components/main-nav";
 import NavbarActions from "@/components/navbar-actions";
 import getCategories from "@/actions/get-categories";
-import TechStore from "@/components/navbar-tech-store";
+/* import TechStore from "@/components/navbar-tech-store"; */
 import { useEffect, useState } from "react";
 import { Category } from "@/types";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -37,7 +37,7 @@ const Navbar = () => {
             </div>
           </Link>
           <MainNav data={categories || []} />
-          <TechStore />
+          {/* <TechStore /> */}
           <NavbarActions />
         </div>
       </Container>
